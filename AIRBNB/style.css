@@ -1,0 +1,414 @@
+/* 초기화 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#main-page {
+  background: url(img/bg.jpg) no-repeat bottom center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.main-navi{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0px 80px;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+
+.main-navi .logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.main-navi .logo a {
+  text-decoration: none;
+  color: #ff385c;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 7px;
+}
+
+.main-navi .logo i {
+  font-size: 40px;
+  position: relative;
+  top: 6px;
+}
+
+.main-navi .search .button {
+  width: 300px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  outline: none;
+  font-weight: 700;
+}
+.main-navi .search .button:hover {
+  box-shadow: rgba(0,0,0,0.15) 0px 2px 8px;
+}
+
+.main-navi .search .button .rButton {
+  background-color: #ff385c;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 7px;
+}
+
+.main-navi .search .button .rButton i{
+  font-size: 10px;
+}
+
+.main-navi .menu {
+  font-weight: 600;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.main-navi .menu .host {
+  font-size: 14px;
+  width: 107px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  outline: none;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid rgba(221, 221, 221, 0);
+  cursor: pointer;
+}
+
+.main-navi .menu .host:hover {
+  background-color: rgba(235, 235, 235, 0.602);
+}
+
+.main-navi .menu .globe {
+  font-size: 14px;
+  width: 52px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  outline: none;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid rgba(221, 221, 221, 0);
+  cursor: pointer;
+}
+
+.main-navi .menu .globe:hover {
+  background-color: rgba(235, 235, 235, 0.602);
+}
+
+.main-navi .menu .item {
+  font-size: 20px;
+  width: 80px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  outline: none;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.main-navi .menu .item:hover {
+  box-shadow: rgba(0,0,0,0.15) 0px 2px 8px;
+}
+
+/* 1페이지*/
+
+.page1{
+  padding: 0px 80px;
+  padding-top: 660px;
+  display: flex;
+  justify-content: space-between;
+  height: 680px;
+  align-items: center;
+}
+
+.page1 .near {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.page1 .see {
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  text-align: left;
+  display: flex;
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.page1 .miniB {
+  width: 160px;
+  height: 35px;
+  border-radius: 10px;
+  color: rgb(80, 80, 80);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px 13px;
+  margin: 18px 0px 0px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  outline: none;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.page1 .miniB:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+/* 차로 n시간 거리 */
+
+.ce {
+  text-align: center;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  box-sizing: border-box;
+  padding: 40px;
+  margin: 300;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid .ct {
+  cursor: pointer;
+  display : inline-block;
+  text-align: justify;
+}
+
+.grid .ct1 {
+  cursor: pointer;
+  display : inline-block;
+  text-align: left;
+  width : 120%;
+}
+
+/* 어디에서나 여행은~~ */
+
+#picture {
+  padding: 0 200px;
+  margin: 50px 0;
+}
+
+.main2 .live {
+  margin-left: 16%;
+  padding-left: 80px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.main2 .house {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding-top: 40px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+ 
+}
+
+.main2 .house .hu {
+  cursor: pointer;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* 여러분의 세상을~ */
+.main3 {
+  padding-top: 60px;
+}
+
+.main3 .split {
+  position:relative;
+  text-align:center;
+  color:#000000;
+  padding-left: 100px;
+  height: 50%;
+}
+
+.main3 .split div {
+  font-size: 180%;
+  position: absolute;
+  text-align:left;
+  top:43%;
+  left:30%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.main3 .split .hostSB {
+  margin-top: 180px;
+  left: 27%;
+}
+
+.main3 .split .startB {
+  width: 200px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 10px;
+  color: rgb(80, 80, 80);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 세상을 만나는 특별한 방법 */
+.main4 {
+  padding: 0px 80px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.main4 .meet {
+  margin-left: 16%;
+  padding: 50px 0px 0px 0px;
+  text-align: left;
+  font-size: 23px;
+}
+
+.main4 .experience {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding: 40px 0px 60px 0px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+}
+
+.main4 .experience .ex {
+  cursor: pointer;
+  text-align: left;
+}
+
+/* 아랫부분 */
+.ending{
+  border-top: 1px solid #DDDDDD;
+  background-color: #F7F7F7;
+  width:100%;
+  height:450px;
+}
+
+.ending .etc {
+  margin: 0px 100px;
+  padding: 0px 80px;
+}
+
+.ending .etc .mod{
+  flex-direction: row;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+ul {
+  width: 500px;
+  float: left;
+}
+
+li {
+  margin-top: 16px;
+  list-style:none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ending .etc .mod .nn ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ending .etc .mod .nn{
+  padding: 0px 12px;
+ }
+
+ .air {
+  background-color: #F7F7F7;
+  width:100%;
+  height:76px;
+ }
+
+ .air .bnb{
+  border-top: 1px solid #DDDDDD;
+  margin: 0px 120px;
+  font-size: 15px;
+ }
+
+ .air .bnb .ie {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+ }
+
+ .air .bnb .ie .htd {
+  color: #222222;
+  margin-right: 10px;
+ }
+
+ footer a {
+  color: #222222;
+}
+
